@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+   <link rel="stylesheet" href="../css/subscribe.css">
+   <script src="../js/subscribe.js" defer></script>
+</head>
+<body>
+    <button id="mainbutton" onclick="mainbuttonfun()" onblur="hidediv()">
+        <img src="../assect/All.png" id="icon">
+        <span class="text">Subscribe</span>
+        <div id="maindiv">
+            <div class="subdiv" onclick="iconsfun(`../assect/All.png`)">
+                <img src="../assect/All.png" class="icons">
+                <span class="texts">All</span>
+            </div>
+            <div class="subdiv" onclick="iconsfun(`../assect/personalized.svg`)">
+                <img src="../assect/personalized.svg" class="icons">
+                <span class="texts">Personalized</span>
+            </div>
+            <div class="subdiv" onclick="iconsfun(`../assect/non.svg`)">
+                <img src="../assect/non.svg" class="icons">
+                <span class="texts">None</span>
+            </div>
+            <div class="subdiv" onclick="displayunsubfun()">
+                <img src="../assect/unsucrible.svg" class="icons">
+                <span class="texts">Unsucrible</span>
+            </div>
+        </div>
+    </button>
+    <div id="unsucribeDiv">
+        <h3>Unsubscribe from the chanal ?</h3>
+        <button id="clacel" onclick=" hideunsubdiv()">Cancel</button>
+        <button id="unsucrible" onclick="hideunsubscribe()">Unsucrible</button>
+    </div>
+</body>
+</html>
